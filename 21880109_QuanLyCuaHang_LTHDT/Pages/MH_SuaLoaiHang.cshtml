@@ -1,0 +1,16 @@
+﻿@page
+@model _21880109_QuanLyCuaHang_LTHDT.Pages.MH_SuaLoaiHangModel
+
+@if (Model.LoaiHang != null)
+{
+    <form method="post">
+
+        <label for="TenMatHang">Nhập Tên Loại Hàng:</label><br />
+        <input type="text" name="TenLoaiHang" value="@Model.LoaiHang.TenLoaiHang"><br />
+
+        <input type="submit" value="Sửa">
+    </form>
+
+}
+
+@Model.Chuoi

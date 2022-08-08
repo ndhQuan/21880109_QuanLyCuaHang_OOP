@@ -1,0 +1,15 @@
+﻿@page
+@model _21880109_QuanLyCuaHang_LTHDT.Pages.MH_XoaMatHangModel
+@using Entities
+@{
+}
+@if (Model.matHang != null)
+{
+    <form method="post">
+        <div>Bạn có muốn xóa sản phẩm @Model.matHang.TenMH</div>
+        <input type="submit" value="Xóa">
+    </form>
+
+}
+
+@Model.Chuoi

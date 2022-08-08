@@ -1,0 +1,12 @@
+﻿@page
+@model _21880109_QuanLyCuaHang_LTHDT.Pages.MH_XoaLoaiHangModel
+@if (Model.loaiHang != null)
+{
+    <form method="post">
+        <div>Bạn có muốn xóa sản phẩm @Model.loaiHang.TenLoaiHang</div>
+        <input type="submit" value="Xóa">
+    </form>
+
+}
+
+@Model.Chuoi
